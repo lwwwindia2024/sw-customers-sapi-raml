@@ -5,7 +5,8 @@ mediaType:
 - application/json
 types:
   Customer: !include datatypes/Customer.raml
-  CustomerRequest: !include datatypes/CustomerRequest.raml 
+  CustomerRequest: !include datatypes/CustomerRequest.raml
+  UpdateCustomerRequest: !include datatypes/UpdateCustomerRequest.raml
   Address: !include datatypes/Address.raml
   AddressRequest: !include datatypes/AddressRequest.raml
   ErrorMessage: !include datatypes/ErrorMessage.raml
@@ -43,5 +44,11 @@ traits:
             }
    
       
-   
+      
+
+  /{id}:
+    type:
+      member
+    get:  
+    put:  
     
